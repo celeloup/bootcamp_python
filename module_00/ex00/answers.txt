@@ -1,0 +1,15 @@
+Output a list of installed packages
+    conda list
+
+Output a list of installed packages and their versions
+    pip list
+
+Show the package metadata of numpy
+    pip show numpy
+
+Search for PyPI packages whose name or summary contains "tesseract"
+    pip search tesseract -> MAIS NE MARCHE PLUS
+
+Freeze the packages and their current versions in a requirements.txt file you have
+to turn-in
+    pip freeze > requirements.txt
