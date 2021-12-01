@@ -5,7 +5,7 @@ import string
 def text_analyser(*args):
     """A function to analyze a text by counting its upper characters, \
 lower characters, punctuation and spaces."""
-    
+
     if (len(args) > 1):
         print("ERROR")
         return
@@ -14,6 +14,7 @@ lower characters, punctuation and spaces."""
         text = input()
     else:
         text = args[0]
+        print(f"""Text to analyze:\n\"{text}\"\n""")
     lower = 0
     upper = 0
     punctuation = 0
@@ -31,4 +32,5 @@ lower characters, punctuation and spaces."""
 - {} lower letters\n- {} punctuation marks\n- {} spaces"
           .format(len(text), upper, lower, punctuation, spaces))
 
-text_analyser("Python 2.0, released 2000, introduced features like List comprehensions and a garbage collection system capable of collecting reference cycles.")
+
+text_analyser()

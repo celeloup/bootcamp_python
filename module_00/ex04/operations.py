@@ -4,9 +4,11 @@ import sys
 def check_args(args):
     len_arg = len(args)
     if (len_arg == 2):
-        if (args[0].isnumeric() and args[1].isnumeric()):
-            return 0
-        else:
+        try:
+            int(args[0])
+            int(args[1])
+            return (0)
+        except ValueError:
             print("InputError: only numbers\n")
     elif (len_arg > 2):
         print("InputError: too many arguments\n")
